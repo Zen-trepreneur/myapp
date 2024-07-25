@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Demo Page</title>
+</head>
+<body>
+  <div id="root"></div>
+
+
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+  <script type="text/babel">
+	function App() {
+	const [num, setNum]=useState(0)
+	const [age,setAge]=useState(42)
+	console.log('Number',num)
+	  return (
+	    <body>
+	    <h1>Number</h1>
+	    <div>
+	      <p>You clicked the button {num} times</p>
+	      <button onClick={()=> setNum(num+1)} >
+		Click Me</button>
+	    </div>
+	    </body>
+	      );
+	};
+	export default App
+
+  </script>
+</body>
+</html>
